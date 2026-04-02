@@ -4,9 +4,8 @@ import { CONTAINER_CLASSES } from '../constants';
 
 const Footer = () => {
   const socialLinks = [
-    { name: 'LINKEDIN', href: '#' },
-    { name: 'EMAIL', href: 'mailto:lauragutierrez@email.com' },
-    { name: 'WHATSAPP', href: '#' },
+    { name: 'EMAIL', href: 'mailto:design.lauragutierrez@gmail.com' },
+    { name: 'WHATSAPP', href: 'https://wa.link/fukyq9' },
   ];
 
   return (
@@ -51,15 +50,17 @@ const Footer = () => {
           {/* Right: Email & Action Buttons */}
           <div className="flex flex-col lg:items-end gap-8">
             <a 
-              href="mailto:hello@lauragutierrez.design" 
+              href="mailto:design.lauragutierrez@gmail.com" 
               className="font-sans text-2xl md:text-3xl text-bg-cream hover:text-[#4FC3FF] transition-colors duration-300 block"
             >
-              hello@lauragutierrez.design
+              design.lauragutierrez@gmail.com
             </a>
             
             <div className="flex flex-wrap gap-4 lg:justify-end">
               <motion.a
-                href="#"
+                href="https://www.linkedin.com/in/laurauxui/"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-bg-cream text-primary-blue px-8 py-3 rounded-full font-display font-bold transition-all duration-300 hover:bg-[#4FC3FF] hover:text-white hover:shadow-[0_4px_14px_0_rgba(79,195,255,0.39)]"

@@ -239,7 +239,7 @@ export default function About() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.8, duration: 0.5 }}
-                className="inline-block px-3 py-1 mx-1 bg-[#66FF66] text-primary-blue rounded-xl rotate-[-1deg] shadow-sm"
+                className="inline-block px-3 py-1 mx-1 bg-accent-green text-primary-blue rounded-xl rotate-[-1deg] shadow-sm"
               >
                 Everything Nice
               </motion.span>{" "}

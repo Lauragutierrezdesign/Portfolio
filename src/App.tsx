@@ -17,7 +17,7 @@ import { PresentationCard } from './components/PresentationCard';
 
 const FloatingShapes = () => {
   const particles = Array.from({ length: 25 }).map((_, i) => {
-    const colors = ['#4FC3FF', '#FF4FA3', '#66FF66'];
+    const colors = ['#4FC3FF', '#FF4FA3', '#7ED957'];
     const color = colors[i % colors.length];
     const isStar = i % 2 === 0;
     const size = Math.random() * 24 + 8; // 8px to 32px
@@ -201,12 +201,18 @@ const Hero = () => {
           >
             <span className="text-xs uppercase tracking-widest text-primary-blue/40 font-bold font-raleway">Connect with me</span>
             <div className="flex flex-row flex-wrap gap-4 md:gap-6">
-              {['LINKEDIN', 'EMAIL', 'WHATSAPP'].map((link) => (
-                <a key={link} href="#" className="text-sm font-bold text-primary-blue transition-colors duration-300 ease-in-out hover:text-[#FF4FA3] flex items-center gap-1 group w-fit font-raleway">
-                  {link}
-                  <span className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300 ease-in-out text-primary-blue group-hover:text-[#FF4FA3]">↗</span>
-                </a>
-              ))}
+              <a href="https://www.linkedin.com/in/laurauxui/" target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-primary-blue transition-colors duration-300 ease-in-out hover:text-[#FF4FA3] flex items-center gap-1 group w-fit font-raleway">
+                LINKEDIN
+                <span className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300 ease-in-out text-primary-blue group-hover:text-[#FF4FA3]">↗</span>
+              </a>
+              <a href="mailto:design.lauragutierrez@gmail.com" className="text-sm font-bold text-primary-blue transition-colors duration-300 ease-in-out hover:text-[#FF4FA3] flex items-center gap-1 group w-fit font-raleway">
+                EMAIL
+                <span className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300 ease-in-out text-primary-blue group-hover:text-[#FF4FA3]">↗</span>
+              </a>
+              <a href="https://wa.link/fukyq9" target="_blank" rel="noopener noreferrer" className="text-sm font-bold text-primary-blue transition-colors duration-300 ease-in-out hover:text-[#FF4FA3] flex items-center gap-1 group w-fit font-raleway">
+                WHATSAPP
+                <span className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all duration-300 ease-in-out text-primary-blue group-hover:text-[#FF4FA3]">↗</span>
+              </a>
             </div>
           </motion.div>
 
