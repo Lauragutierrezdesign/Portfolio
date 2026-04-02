@@ -3,6 +3,9 @@ import { motion, useScroll, useSpring } from 'motion/react';
 import { ArrowLeft, CheckCircle2, Lightbulb, Users, Target, TrendingUp } from 'lucide-react';
 import { CONTAINER_CLASSES } from '../constants';
 import Footer from './Footer';
+import PortadaCaribbean from '../assets/images/portada-caribbeanCinemas.png';
+import UserFlow from '../assets/images/user-flow.png';
+import UiCaribbeanCinemas from '../assets/images/ui-caribbeanCinemas.png';
 
 interface CaseStudyProps {
   projectId: number;
@@ -21,7 +24,7 @@ const projectData = {
       { label: "Platform", value: "Mobile (iOS/Android)" },
       { label: "Type", value: "Product Redesign" }
     ],
-    heroImage: "https://picsum.photos/seed/cinemas-seats/1600/900",
+    heroImage: PortadaCaribbean,
     overview: {
       text: "Caribbean Cinemas is a market leader in the Caribbean, but its digital product faced critical usability hurdles that alienated users. In the Dominican Republic market, where digital adoption is growing, the app's friction was a significant barrier to conversion. The goal was to transform a high-friction ticketing process into a seamless, user-centered experience.",
       problems: [
@@ -361,12 +364,11 @@ const CaseStudy: React.FC<CaseStudyProps> = ({ projectId, onBack }) => {
             
             <div className="lg:col-span-7">
               <div className="aspect-[4/3] bg-white rounded-[2rem] border border-primary-blue/10 overflow-hidden shadow-xl flex items-center justify-center group">
-                <div className="text-center p-12">
-                  <div className="w-16 h-16 rounded-full bg-primary-blue/5 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
-                    <TrendingUp size={32} className="text-primary-blue/40" />
-                  </div>
-                  <p className="text-xs font-bold uppercase tracking-widest text-primary-blue/40">Placeholder: Flujograma de usuario</p>
-                </div>
+                <img 
+                  src={UserFlow} 
+                  alt="User Flow Diagram"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
               </div>
             </div>
           </div>
@@ -384,11 +386,19 @@ const CaseStudy: React.FC<CaseStudyProps> = ({ projectId, onBack }) => {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="aspect-[3/4] bg-bg-cream rounded-[2rem] border border-primary-blue/10 flex items-center justify-center group shadow-sm">
-                <p className="text-xs font-bold uppercase tracking-widest text-primary-blue/40">Mockup: Home & Selection</p>
+              <div className="aspect-[3/4] bg-bg-cream rounded-[2rem] border border-primary-blue/10 overflow-hidden flex items-center justify-center group shadow-sm">
+                <img 
+                  src={UiCaribbeanCinemas} 
+                  alt="Caribbean Cinemas UI Mockup"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
               </div>
-              <div className="aspect-[3/4] bg-bg-cream rounded-[2rem] border border-primary-blue/10 flex items-center justify-center group shadow-sm">
-                <p className="text-xs font-bold uppercase tracking-widest text-primary-blue/40">Mockup: Seat Selection & Payment</p>
+              <div className="aspect-[3/4] bg-bg-cream rounded-[2rem] border border-primary-blue/10 overflow-hidden flex items-center justify-center group shadow-sm">
+                <img 
+                  src={UiCaribbeanCinemas} 
+                  alt="Caribbean Cinemas UI Mockup"
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
               </div>
             </div>
           </div>

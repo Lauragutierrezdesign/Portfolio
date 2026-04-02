@@ -98,7 +98,9 @@ const Navigation = ({ currentPage, onNavigate }: { currentPage: string, onNaviga
         </div>
 
         <a 
-          href="#resume" 
+          href="/src/assets/pdf/LauraGutierrez-Product-Designer-Resume.pdf" 
+          target="_blank"
+          rel="noopener noreferrer"
           className="bg-primary-blue text-white px-6 py-2.5 rounded-full font-medium transition-all duration-300 ease-in-out hover:bg-[#FF4FA3] hover:shadow-[0_4px_14px_0_rgba(255,79,163,0.39)] hover:scale-105"
         >
           Resume

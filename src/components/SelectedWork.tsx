@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import { EyeOff, X, Lock, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { CONTAINER_CLASSES } from '../constants';
+import PortadaCaribbean from '../assets/images/portada-caribbeanCinemas.png';
+const PortadaCarol = "https://picsum.photos/seed/healthcare/1000/800";
+const PortadaHumano = "https://picsum.photos/seed/ecommerce/1000/800";
+
 
 const projects = [
   {
@@ -25,7 +29,7 @@ const projects = [
     metricLabel: "KEY METRIC",
     metricValue: "Expected reduced checkout friction",
     tags: ["UX MATURITY", "CONVERSION"],
-    restricted: false,
+    restricted: true,
     projectNumber: "02/03",
     inDevelopment: true,
     slug: "carol-pharmacy-app"
@@ -133,12 +137,7 @@ export default function SelectedWork({ onSelectProject }: SelectedWorkProps) {
                     </div>
                   ) : (
                     <img 
-                      src={project.id === 2 
-                        ? "https://picsum.photos/seed/cinemas-seats/1000/800"
-                        : project.id === 1 
-                          ? "https://picsum.photos/seed/healthcare/1000/800"
-                          : "https://picsum.photos/seed/ecommerce/1000/800"
-                      } 
+                      src={project.id === 1 ? PortadaCaribbean : project.id === 2 ? PortadaCarol : PortadaHumano} 
                       alt={project.title} 
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       referrerPolicy="no-referrer"

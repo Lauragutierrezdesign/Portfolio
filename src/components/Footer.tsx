@@ -68,7 +68,9 @@ const Footer = () => {
                 LinkedIn
               </motion.a>
               <motion.a
-                href="#"
+                href="/src/assets/pdf/LauraGutierrez-Product-Designer-Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-transparent text-bg-cream px-8 py-3 rounded-full font-sans font-medium border border-bg-cream transition-all duration-300 hover:bg-[#4FC3FF] hover:border-[#4FC3FF] hover:text-white"
